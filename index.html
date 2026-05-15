@@ -40,4 +40,72 @@
                 </div>
             </div>
             <div class="relative reveal active">
-                <img src="
+                <img src="https://images.pexels.com/photos/6195119/pexels-photo-6195119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-[40px] shadow-2xl object-cover h-[500px] w-full" alt="Professional Cleaning">
+            </div>
+        </div>
+    </section>
+
+    <section id="vision" class="py-40 px-8 bg-white">
+        <div class="max-w-5xl mx-auto text-center reveal">
+            <h2 class="heading-font text-5xl font-bold mb-10">Integrity in Every Detail.</h2>
+            <p class="text-slate-500 text-xl font-light leading-relaxed mb-20">
+                Led by Jill Weger, Rooster Cleaning Services LLC operates at the intersection of administrative precision and environmental excellence.
+            </p>
+            <img src="https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-[50px] shadow-xl w-full h-[400px] object-cover" alt="Modern Building">
+        </div>
+    </section>
+
+    <section id="sectors" class="py-40 px-8 bg-slate-50">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-8">
+            <div class="glass-card p-12 rounded-[40px] reveal">
+                <img src="https://images.pexels.com/photos/4099467/pexels-photo-4099467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-2xl mb-8 h-64 w-full object-cover" alt="Cleaning Tools">
+                <h3 class="heading-font text-3xl font-bold mb-4 text-slate-900">Building Maintenance</h3>
+                <p class="text-slate-500">Systematic care for dwellings and administrative structures.</p>
+            </div>
+            <div class="glass-card p-12 rounded-[40px] reveal">
+                <img src="https://images.pexels.com/photos/209235/pexels-photo-209235.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="rounded-2xl mb-8 h-64 w-full object-cover" alt="Office Space">
+                <h3 class="heading-font text-3xl font-bold mb-4 text-slate-900">Remediation Services</h3>
+                <p class="text-slate-500">Waste management and advanced support services.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="compliance" class="py-40 px-8 bg-white">
+        <div class="max-w-4xl mx-auto border border-slate-100 p-16 rounded-[50px] shadow-sm reveal">
+            <h2 class="heading-font text-3xl font-bold mb-8 text-center">Data Governance</h2>
+            <div class="h-64 overflow-y-scroll pr-4 text-[11px] uppercase tracking-widest leading-loose text-slate-400">
+                <p class="mb-4">Rooster Cleaning Services LLC adheres to strict privacy standards for all clients in Sisters, Oregon.</p>
+                <p class="mb-4 font-bold text-slate-900">Official Contact: contact@roostercleaningserv.org</p>
+                <p class="mb-4">We do not share administrative records or location data (+1 530-687-9819) with third-party networks.</p>
+                <p>Operational Address: 110 W Heising Dr Sisters, OR.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="pt-40 pb-20 px-8 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-20">
+            <div>
+                <h2 class="heading-font text-5xl font-bold mb-10 text-sky-400">Connect.</h2>
+                <div class="space-y-6">
+                    <p class="text-2xl font-light">contact@roostercleaningserv.org</p>
+                    <p class="text-2xl font-light">+1 530-687-9819</p>
+                </div>
+            </div>
+            <div class="lg:text-right">
+                <p class="text-slate-500 uppercase tracking-widest text-xs mb-4">Headquarters</p>
+                <p class="text-xl font-light">110 W Heising Dr Sisters, OR, 97759-2715</p>
+                <p class="mt-20 text-[9px] text-slate-600 uppercase tracking-[0.5em]">Principal: Jill Weger</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('active');
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
